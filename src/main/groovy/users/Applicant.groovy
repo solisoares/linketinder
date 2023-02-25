@@ -1,12 +1,12 @@
 package users
 
 
-class Aplicant extends User {
+class Applicant extends User {
     Long cpf  // brazilian social security number
     Integer age
     List<String> skills
 
-    Aplicant(String name, String email,
+    Applicant(String name, String email,
              String country, String state,
              Long cep, String description,
              Long cpf, Integer age,
@@ -21,7 +21,7 @@ class Aplicant extends User {
     @Override
     public String toString() {
         return """\
-Aplicant{
+Applicant{
     cpf=$cpf,
     age=$age,
     skills=$skills,
