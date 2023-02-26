@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -107,6 +108,35 @@ class CompanyTest {
         assertEquals(Arrays.asList("Renamed", "Renamed"), company.getSkills());
     }
 
+    @Test
+    void testUpdate() {
+        //given
+        String newName = "-- Renamed --";
+        String newEmail = null;
+        String newCountry = "-- Renamed --";
+        String newState = null;
+        Long newCep = 42L;
+        String newDescription = null;
+        Long newCnpj = 42L;
+        List<String> newSkills = Arrays.asList("-- Renamed --", "-- Renamed --");
+
+
+        //when
+        company.update(newName, newEmail,
+                newCountry, newState,
+                newCep, newDescription,
+                newCnpj, newSkills);
+
+        //then
+        assertEquals("-- Renamed --", company.getName());
+        assertEquals("company1@co.com", company.getEmail());
+        assertEquals("-- Renamed --", company.getCountry());
+        assertEquals("State1", company.getState());
+        assertEquals(42L, company.getCep());
+        assertEquals("Company1 description", company.getDescription());
+        assertEquals(42L, company.getCnpj());
+        assertEquals(Arrays.asList("-- Renamed --", "-- Renamed --"), company.getSkills());
+    }
 }
 
 
