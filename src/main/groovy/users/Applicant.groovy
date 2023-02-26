@@ -4,17 +4,15 @@ package users
 class Applicant extends User {
     Long cpf  // brazilian social security number
     Integer age
-    List<String> skills
 
     Applicant(String name, String email,
              String country, String state,
              Long cep, String description,
              Long cpf, Integer age,
              List<String> skills) {
-        super(name, email, country, state, cep, description)
+        super(name, email, country, state, cep, description, skills)
         this.cpf = cpf
         this.age = age
-        this.skills = skills
     }
 
 

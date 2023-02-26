@@ -2,15 +2,13 @@ package users
 
 class Company extends User{
     Long cnpj  // brazilian employer identification number
-    List<String> requiredSkills
 
     Company(String name, String email,
             String country, String state,
             Long cep, String description,
-            Long cnpj, List<String> requiredSkills) {
-        super(name, email, country, state, cep, description)
+            Long cnpj, List<String> skills) {
+        super(name, email, country, state, cep, description, skills)
         this.cnpj = cnpj
-        this.requiredSkills = requiredSkills
     }
 
 
@@ -19,7 +17,7 @@ class Company extends User{
         return """\
 Company{
     cnpj=$cnpj,
-    requiredSkills=$requiredSkills,
+    requiredSkills=$skills,
     super=${super.toString()}
 }"""
     }
