@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
+import java.util.List;
 
 
 class ApplicantTest {
@@ -118,5 +119,37 @@ class ApplicantTest {
     void testSetSkills() {
         applicant.setSkills(Arrays.asList("Renamed", "Renamed"));
         assertEquals(Arrays.asList("Renamed", "Renamed"), applicant.getSkills());
+    }
+
+    @Test
+    void testUpdate() {
+        //given
+        String newName = "-- Renamed --";
+        String newEmail = null;
+        String newCountry = "-- Renamed --";
+        String newState = null;
+        Long newCep = 42L;
+        String newDescription = null;
+        Long newCpf = 42L;
+        Integer newAge = null;
+        List<String> newSkills = Arrays.asList("-- Renamed --", "-- Renamed --");
+
+
+        //when
+        applicant.update(newName, newEmail,
+                         newCountry, newState,
+                         newCep, newDescription,
+                         newCpf, newAge, newSkills);
+
+        //then
+        assertEquals("-- Renamed --", applicant.getName());
+        assertEquals("applicant1@ap.com", applicant.getEmail());
+        assertEquals("-- Renamed --", applicant.getCountry());
+        assertEquals("State1", applicant.getState());
+        assertEquals(42L, applicant.getCep());
+        assertEquals("Applicant1 description", applicant.getDescription());
+        assertEquals(42L, applicant.getCpf());
+        assertEquals(21, applicant.getAge());
+        assertEquals(Arrays.asList("-- Renamed --", "-- Renamed --"), applicant.getSkills());
     }
 }
