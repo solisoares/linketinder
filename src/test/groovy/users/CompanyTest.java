@@ -97,14 +97,14 @@ class CompanyTest {
     }
 
     @Test
-    void testGetRequiredSkills() {
-        assertEquals(Arrays.asList("Skill1a", "Skill1b"), company.getRequiredSkills());
+    void testGetSkills() {
+        assertEquals(Arrays.asList("Skill1a", "Skill1b"), company.getSkills());
     }
 
     @Test
-    void testSetRequiredSkills() {
-        company.setRequiredSkills(Arrays.asList("Renamed", "Renamed"));
-        assertEquals(Arrays.asList("Renamed", "Renamed"), company.getRequiredSkills());
+    void testSetSkills() {
+        company.setSkills(Arrays.asList("Renamed", "Renamed"));
+        assertEquals(Arrays.asList("Renamed", "Renamed"), company.getSkills());
     }
 
 }
