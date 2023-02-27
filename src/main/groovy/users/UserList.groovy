@@ -15,6 +15,10 @@ abstract class UserList {
         users.add(user)
     }
 
+    void remove(User user) {
+        users.remove(user)
+    }
+
     User get(String name) throws NoSuchElementException {
         User user
 
