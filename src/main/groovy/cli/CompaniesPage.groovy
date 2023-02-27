@@ -10,9 +10,9 @@ class CompaniesPage extends PageCrudCli {
     CompanyList companyList = new CompanyList()
 
     CompaniesPage() {
-        this.title = "*     Companies Page     *"
-        this.divider = "---------------------"
-        this.showSession = "This is the companies page"
+        this.title =       "*        Companies Page      *"
+        this.divider =     "------------------------------"
+        this.showSession = "  This is the companies page  "
         this.options = [0: ["Add company", { add() }],
                         1: ["Remove company", { remove() }],
                         2: ["Update company", { update() }],

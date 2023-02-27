@@ -6,9 +6,9 @@ class ApplicantsPage extends PageCrudCli {
     ApplicantList applicantList = new ApplicantList()
 
     ApplicantsPage() {
-        this.title = "*     Applicants Page     *"
-        this.divider = "---------------------"
-        this.showSession = "This is the applicants page"
+        this.title =       "*        Applicants Page      *"
+        this.divider =     "-------------------------------"
+        this.showSession = "  This is the applicants page  "
         this.options = [0: ["Add applicant", { add() }],
                         1: ["Remove applicant", { remove() }],
                         2: ["Update applicant", { update() }],
