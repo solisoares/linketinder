@@ -12,6 +12,7 @@ Features
 
 Technologies used
 * Groovy4+ for the source code
+  * Also a simple CLI with closures is implemented
 * Java17+ for testing
 * Unit tests and TDD 
 
