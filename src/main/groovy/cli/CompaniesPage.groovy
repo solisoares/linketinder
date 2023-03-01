@@ -45,7 +45,7 @@ class CompaniesPage extends PageCrudCli {
         printf "Cep: ";           cep = Long.parseLong(sc.nextLine());
         printf "Description: ";   description = sc.nextLine();
         printf "CNPJ: ";           cnpj = Long.parseLong(sc.nextLine());
-        printf "Skills: ";        skills = sc.next().split();
+        printf "Skills: ";        skills = sc.nextLine().split();
 
         companyList.add(new Company(name, email, country, state, cep, description, cnpj, skills))
 

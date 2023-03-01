@@ -44,7 +44,7 @@ class ApplicantsPage extends PageCrudCli {
         printf "Description: ";   description = sc.nextLine();
         printf "Cpf: ";           cpf = Long.parseLong(sc.nextLine());
         printf "Age: ";           age = Integer.parseInt(sc.nextLine());
-        printf "Skills: ";        skills = sc.next().split();
+        printf "Skills: ";        skills = sc.nextLine().split();
 
         applicantList.add(new Applicant(name, email, country, state, cep, description, cpf, age, skills))
 
