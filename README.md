@@ -6,7 +6,7 @@
     88888888P dP dP    dP dP   `YP `88888P'   ▒ ░░    ▓  ░ ▒░   ▒ ▒  ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░  
                                                 ░     ▒ ░░ ░░   ░ ▒░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░
 
-_The social insecurity of Tinder matching companies and applicants like LinkedIn_
+_The "social insecurity" of Tinder matching companies and applicants like LinkedIn_
 
 <br>
 
@@ -34,7 +34,6 @@ Technologies used
 
 Stuff to do:
 * Persistence
-* Frontend
 * Handle wrong input pattern
 
 
